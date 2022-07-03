@@ -83,8 +83,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="GEJ-YD-Xxd"/>
                     <connections>
-                        <outlet property="passwordLabel" destination="AAc-gj-YVY" id="gI3-Ct-lNN"/>
-                        <outlet property="usernameLabel" destination="Y7B-UA-hHb" id="usK-pN-d1y"/>
+                        <outlet property="passwordTextField" destination="AAc-gj-YVY" id="gI3-Ct-lNN"/>
+                        <outlet property="usernameTextField" destination="Y7B-UA-hHb" id="usK-pN-d1y"/>
                         <segue destination="k8E-kG-bGU" kind="presentation" identifier="welcome_seg" modalPresentationStyle="fullScreen" id="eC2-dE-tJT"/>
                     </connections>
                 </viewController>

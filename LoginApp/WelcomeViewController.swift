@@ -13,7 +13,7 @@ class WelcomeViewController: UIViewController {
 	@IBOutlet var greetingsLabel: UILabel!
 	
 	// MARK: - Public Properties
-	var username: String = ""
+	var username = ""
 
 	// MARK: - Life Cycles Methods
     override func viewDidLoad() {
