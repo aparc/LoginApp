@@ -13,13 +13,13 @@ class WelcomeViewController: UIViewController {
 	@IBOutlet var greetingsLabel: UILabel!
 	
 	// MARK: - Public Properties
-	var fullName = ""
+	var user: User!
 	
 	// MARK: - Life Cycles Methods
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setupBackground()
-		greetingsLabel.text = "Welcome, \(fullName)!"
+		greetingsLabel.text = "Welcome, \(user.person.fullName)!"
 	}
 
 }

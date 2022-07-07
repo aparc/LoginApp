@@ -17,7 +17,7 @@ class ProfileViewController: UIViewController {
 	@IBOutlet var emailLabel: UILabel!
 	
 	// MARK: - Public properties
-	var person: Person!
+	var user: User!
 
 	// MARK: - Life Cycle Methods
     override func viewDidLoad() {
@@ -35,7 +35,7 @@ class ProfileViewController: UIViewController {
 extension ProfileViewController {
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		if let infoVC = segue.destination as? InfoViewController {
-			infoVC.hobbies = person.hobbies
+			infoVC.hobbies = user.person.hobbies
 		}
 	}
 }
@@ -51,10 +51,10 @@ extension ProfileViewController {
 	}
 	
 	private func setupOutlets() {
-		imageView.image = UIImage(named: person.image)
-		birthdayLabel.text = person.birthday
-		cityLabel.text = person.city
-		phoneLabel.text = person.phoneNumber
-		emailLabel.text = person.email
+		imageView.image = UIImage(named: user.person.image)
+		birthdayLabel.text = user.person.birthday
+		cityLabel.text = user.person.city
+		phoneLabel.text = user.person.phoneNumber
+		emailLabel.text = user.person.email
 	}
 }

@@ -53,12 +53,12 @@ extension LoginViewController {
 		
 		viewControllers.forEach { viewController in
 			if let wellcomeVC = viewController as? WelcomeViewController {
-				wellcomeVC.fullName = "\(user.person.firstName) \(user.person.surname)"
+				wellcomeVC.user = user
 			} else if let navController = viewController as? UINavigationController {
 				guard let profileVC = navController.topViewController as? ProfileViewController else { return }
-				profileVC.person = user.person
+				profileVC.user = user
 			} else if let foodVC = viewController as? FoodViewController {
-				foodVC.favouritesFood = user.person.favouriteFoods
+				foodVC.user = user
 			}
 		}
 	}

@@ -14,13 +14,13 @@ class FoodViewController: UIViewController {
 	@IBOutlet var foodLabels: [UILabel]!
 	
 	// MARK: - Public Properties
-	var favouritesFood: [String]!
+	var user: User!
 	
 	// MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 		imageViews.indices.forEach { index in
-			if let food = favouritesFood?[index] {
+			if let food = user?.person.favouriteFoods[index] {
 				imageViews[index].image = UIImage(named: food)
 				foodLabels[index].text = food
 			}

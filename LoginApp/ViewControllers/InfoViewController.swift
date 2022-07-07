@@ -12,7 +12,6 @@ class InfoViewController: UIViewController {
 	// MARK: - IB Outlets
 	
 	@IBOutlet var hobbiesLabel: UILabel!
-	@IBOutlet var aboutMeLabel: UILabel!
 	
 	// MARK: - Public Properties
 	var hobbies: [String]!
